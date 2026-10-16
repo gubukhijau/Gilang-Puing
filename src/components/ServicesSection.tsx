@@ -16,11 +16,7 @@ import { WhatsAppIcon } from './icons/WhatsAppIcon';
 import { SERVICES, COMPANY_INFO } from '../data/content';
 import { ServiceItem } from '../types';
 
-interface ServicesSectionProps {
-  onSelectServiceForEstimate: (serviceId: string) => void;
-}
-
-export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServiceForEstimate }) => {
+export const ServicesSection: React.FC = () => {
   const [activeModalService, setActiveModalService] = useState<ServiceItem | null>(null);
 
   const getServiceIcon = (id: string) => {
@@ -137,28 +133,15 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                       <ArrowRight className="w-3 h-3" />
                     </button>
 
-                    <div className="flex items-center gap-2">
-                      <button
-                        onClick={() => {
-                          onSelectServiceForEstimate(service.id);
-                          const el = document.getElementById('kalkulator');
-                          el?.scrollIntoView({ behavior: 'smooth' });
-                        }}
-                        className="px-3 py-1.5 text-xs font-medium bg-neutral-200 hover:bg-neutral-300 text-neutral-800 rounded-lg transition-colors whitespace-nowrap"
-                        title="Hitung Estimasi Biaya"
-                      >
-                        Estimasi
-                      </button>
-                      <a
-                        href={COMPANY_INFO.whatsappUrl(`Halo Mas Gilang, saya ingin order jasa: ${service.title}. Mohon info estimasi harga dan ketersediaan armada.`)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-3 py-1.5 text-xs font-semibold bg-amber-400 hover:bg-amber-300 text-neutral-950 rounded-lg transition-colors inline-flex items-center gap-1.5 shadow-2xs whitespace-nowrap"
-                      >
-                        <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-800" />
-                        <span>Order</span>
-                      </a>
-                    </div>
+                    <a
+                      href={COMPANY_INFO.whatsappUrl(`Halo Mas Gilang, saya ingin order jasa: ${service.title}. Mohon info estimasi harga dan ketersediaan armada.`)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-1.5 text-xs font-semibold bg-amber-400 hover:bg-amber-300 text-neutral-950 rounded-lg transition-colors inline-flex items-center gap-1.5 shadow-2xs whitespace-nowrap"
+                    >
+                      <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-800" />
+                      <span>Order</span>
+                    </a>
                   </div>
                 </div>
 
@@ -239,27 +222,16 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                 </ul>
               </div>
 
-              <div className="flex items-center gap-3 pt-4 border-t border-neutral-100">
+              <div className="pt-4 border-t border-neutral-100">
                 <a
                   href={COMPANY_INFO.whatsappUrl(`Halo Mas Gilang, saya ingin order: ${activeModalService.title}. Mohon konfirmasi jadwal & survey.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-4 bg-amber-400 hover:bg-amber-300 text-neutral-950 font-bold text-sm rounded-lg transition-colors shadow-xs"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 bg-amber-400 hover:bg-amber-300 text-neutral-950 font-bold text-sm rounded-lg transition-colors shadow-xs"
                 >
                   <WhatsAppIcon className="w-4 h-4 text-emerald-800" />
                   <span>Order via WhatsApp</span>
                 </a>
-                <button
-                  onClick={() => {
-                    const id = activeModalService.id;
-                    setActiveModalService(null);
-                    onSelectServiceForEstimate(id);
-                    document.getElementById('kalkulator')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="py-2.5 px-4 bg-neutral-100 hover:bg-neutral-200 text-neutral-800 font-semibold text-sm rounded-lg transition-colors"
-                >
-                  Hitung Simulasi
-                </button>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calculator, ShieldCheck, Clock, CheckCircle2, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Clock, CheckCircle2, ArrowRight } from 'lucide-react';
 import { WhatsAppIcon } from './icons/WhatsAppIcon';
 import { COMPANY_INFO, ASSET_IMAGES } from '../data/content';
 
@@ -74,11 +74,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrderModal }) => {
               </a>
 
               <a
-                href="#kalkulator"
+                href="#armada"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-white bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 hover:border-neutral-600 rounded-lg transition-colors whitespace-nowrap shrink-0"
               >
-                <Calculator className="w-4 h-4 text-amber-400" />
-                <span>Hitung Estimasi Biaya</span>
+                <span>Lihat Armada &amp; Tarif</span>
               </a>
             </div>
 

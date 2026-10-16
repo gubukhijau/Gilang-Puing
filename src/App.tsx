@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
-import { CostEstimator } from './components/CostEstimator';
 import { FleetSection } from './components/FleetSection';
 import { WorkflowSection } from './components/WorkflowSection';
 import { CoverageAreaSection } from './components/CoverageAreaSection';
@@ -16,10 +15,6 @@ import { SERVICES } from './data/content';
 export default function App() {
   const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
   const [selectedServiceId, setSelectedServiceId] = useState<string>(SERVICES[0].id);
-
-  const handleSelectServiceForEstimate = (serviceId: string) => {
-    setSelectedServiceId(serviceId);
-  };
 
   const handleOpenOrderModal = (serviceId?: string) => {
     if (serviceId) {
@@ -39,15 +34,7 @@ export default function App() {
         <Hero onOpenOrderModal={() => handleOpenOrderModal()} />
 
         {/* 6 Specialized Services */}
-        <ServicesSection 
-          onSelectServiceForEstimate={handleSelectServiceForEstimate} 
-        />
-
-        {/* Interactive Cost Estimator */}
-        <CostEstimator
-          selectedServiceId={selectedServiceId}
-          onSelectServiceId={setSelectedServiceId}
-        />
+        <ServicesSection />
 
         {/* Fleet & Rates */}
         <FleetSection />

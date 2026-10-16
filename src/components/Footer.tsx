@@ -93,9 +93,9 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-4">
             <a href="#layanan" className="hover:text-neutral-300">Layanan</a>
             <span>·</span>
-            <a href="#kalkulator" className="hover:text-neutral-300">Kalkulator</a>
-            <span>·</span>
             <a href="#armada" className="hover:text-neutral-300">Armada</a>
+            <span>·</span>
+            <a href="#proses" className="hover:text-neutral-300">Proses Kerja</a>
             <span>·</span>
             <a href="#area" className="hover:text-neutral-300">Wilayah Jabodetabek</a>
           </div>
