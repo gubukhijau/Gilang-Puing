@@ -1,0 +1,6 @@
+{
+  "name": "Gilang Buang Puing",
+  "description": "Jasa Buang Puing Bangunan, Sampah Proyek, Tebangan Pohon, Urug Tanah, Pembersihan Lahan, dan Galian Tanah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

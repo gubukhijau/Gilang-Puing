@@ -1,0 +1,82 @@
+import React, { useState } from 'react';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { ServicesSection } from './components/ServicesSection';
+import { CostEstimator } from './components/CostEstimator';
+import { FleetSection } from './components/FleetSection';
+import { WorkflowSection } from './components/WorkflowSection';
+import { CoverageAreaSection } from './components/CoverageAreaSection';
+import { TestimonialsSection } from './components/TestimonialsSection';
+import { FaqSection } from './components/FaqSection';
+import { Footer } from './components/Footer';
+import { QuickOrderModal } from './components/QuickOrderModal';
+import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { SERVICES } from './data/content';
+
+export default function App() {
+  const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
+  const [selectedServiceId, setSelectedServiceId] = useState<string>(SERVICES[0].id);
+
+  const handleSelectServiceForEstimate = (serviceId: string) => {
+    setSelectedServiceId(serviceId);
+  };
+
+  const handleOpenOrderModal = (serviceId?: string) => {
+    if (serviceId) {
+      setSelectedServiceId(serviceId);
+    }
+    setIsOrderModalOpen(true);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-neutral-50 text-neutral-900 selection:bg-amber-400 selection:text-neutral-950">
+      {/* Navigation */}
+      <Navbar onOpenOrderModal={() => handleOpenOrderModal()} />
+
+      {/* Main Landing Sections */}
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <Hero onOpenOrderModal={() => handleOpenOrderModal()} />
+
+        {/* 6 Specialized Services */}
+        <ServicesSection 
+          onSelectServiceForEstimate={handleSelectServiceForEstimate} 
+        />
+
+        {/* Interactive Cost Estimator */}
+        <CostEstimator
+          selectedServiceId={selectedServiceId}
+          onSelectServiceId={setSelectedServiceId}
+        />
+
+        {/* Fleet & Rates */}
+        <FleetSection />
+
+        {/* 4-Step Working Flow & Guarantees */}
+        <WorkflowSection />
+
+        {/* Coverage Areas across Jabodetabek */}
+        <CoverageAreaSection />
+
+        {/* Testimonials & Proof */}
+        <TestimonialsSection />
+
+        {/* Frequently Asked Questions */}
+        <FaqSection />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Interactive Booking & Quotation Modal */}
+      <QuickOrderModal
+        isOpen={isOrderModalOpen}
+        onClose={() => setIsOrderModalOpen(false)}
+        initialServiceId={selectedServiceId}
+      />
+
+      {/* Floating WhatsApp Action Button */}
+      <FloatingWhatsApp />
+    </div>
+  );
+}
