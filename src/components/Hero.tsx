@@ -1,7 +1,7 @@
 import React from 'react';
 import { Calculator, ShieldCheck, Clock, CheckCircle2, ArrowRight } from 'lucide-react';
 import { WhatsAppIcon } from './icons/WhatsAppIcon';
-import { COMPANY_INFO } from '../data/content';
+import { COMPANY_INFO, ASSET_IMAGES } from '../data/content';
 
 interface HeroProps {
   onOpenOrderModal: () => void;
@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrderModal }) => {
           <div className="lg:col-span-5 flex items-center">
             <div className="relative w-full rounded-2xl overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-800 aspect-[4/3] lg:aspect-auto lg:h-full">
               <img
-                src="/src/assets/images/hero_dump_truck_worksite_1792120788969.jpg"
+                src={ASSET_IMAGES.hero}
                 alt="Operasi angkut puing bangunan Gilang Buang Puing dengan dump truck dan tenaga kerja profesional"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"

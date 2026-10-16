@@ -1,4 +1,15 @@
 import { ServiceItem, FleetItem, TestimonialItem, FaqItem, CoverageArea } from '../types';
+import heroDumpTruckImg from '../assets/images/hero_dump_truck_worksite_1792120788969.jpg';
+import excavationImg from '../assets/images/service_excavation_clearing_1792120790487.jpg';
+import treeDebrisImg from '../assets/images/service_tree_debris_removal_1792120791189.jpg';
+import fleetTruckImg from '../assets/images/fleet_truck_showcase_1792120791139.jpg';
+
+export const ASSET_IMAGES = {
+  hero: heroDumpTruckImg,
+  excavation: excavationImg,
+  treeDebris: treeDebrisImg,
+  fleetTruck: fleetTruckImg,
+};
 
 export const COMPANY_INFO = {
   name: 'Gilang Buang Puing',
@@ -22,7 +33,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Jasa Buang Puing Bangunan',
     tagline: 'Pecahan tembok, bata merah, hebel, cor beton & keramik',
     description: 'Solusi cepat pembuangan sisa bongkaran dinding, semen, genteng, plesteran, dan puing konstruksi rumah maupun gedung komersial. Dikerjakan rapi hingga halaman kembali bersih siap dibangun.',
-    image: '/src/assets/images/hero_dump_truck_worksite_1792120788969.jpg',
+    image: heroDumpTruckImg,
     recommendedFleet: 'Truk Engkel / Dump Truck Double',
     features: [
       'Penyediaan karung puing jika diperlukan',
@@ -39,7 +50,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Jasa Buang Sampah Proyek / Renovasi',
     tagline: 'Sisa material kayu, gypsum, plafon, kardus & partisi',
     description: 'Pembersihan tuntas limbah non-struktural pasca renovasi interior, ruko, kantor, dan rumah tinggal. Tidak perlu pusing komplain tetangga atau satpam perumahan karena pengerjaan kami higienis dan gesit.',
-    image: '/src/assets/images/fleet_truck_showcase_1792120791139.jpg',
+    image: fleetTruckImg,
     recommendedFleet: 'Pick-up Bak / Truk Engkel Box',
     features: [
       'Pemisahan sampah berbahaya & mudah terbakar',
@@ -56,7 +67,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Jasa Buang Sampah Tebangan Pohon',
     tagline: 'Batang kayu besar, ranting, dahan, dan sisa pangkas taman',
     description: 'Evakuasi sampah organik hasil tebang pohon pekarangan atau pemangkasan taman estate. Kami memotong batang kayu besar menjadi ukuran ringkas dan mengangkut semuanya hingga pekarangan Anda lapang seketika.',
-    image: '/src/assets/images/service_tree_debris_removal_1792120791189.jpg',
+    image: treeDebrisImg,
     recommendedFleet: 'Truk Engkel / Truk Dump',
     features: [
       'Bisa request bantuan potong chainsaw / gergaji mesin',
@@ -73,7 +84,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Jasa Pengurugan Puing & Tanah',
     tagline: 'Peninggian elevasi tanah, lantai dasar, dan pemadatan lahan',
     description: 'Pengadaan material urug puing bangunan super padat atau tanah merah/tanah campur berkualitas untuk meninggikan elevasi lahan bebas banjir. Menyediakan paket sekalian jasa sebar dan perataan manual maupun alat berat.',
-    image: '/src/assets/images/service_excavation_clearing_1792120790487.jpg',
+    image: excavationImg,
     recommendedFleet: 'Dump Truck Indeks 7-8 m³',
     features: [
       'Pilihan material: Puing murni, sirtu, makadam, tanah merah',
@@ -90,7 +101,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Jasa Pembersihan Lahan Kosong (Land Clearing)',
     tagline: 'Babas semak belukar, ilalang lebat, & puing berserakan',
     description: 'Pembersihan menyeluruh kavling atau tanah kosong yang terbengkalai agar siap dijual, dipagar, atau mulai dibangun pondasi. Menggunakan kombinasi tenaga tebas profesional dan mini excavator untuk lahan berukuran luas.',
-    image: '/src/assets/images/service_excavation_clearing_1792120790487.jpg',
+    image: excavationImg,
     recommendedFleet: 'Mini Excavator + Dump Truck',
     features: [
       'Pembabatan rumput gajah liar, semak, dan perdu',
@@ -107,7 +118,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Jasa Galian Tanah',
     tagline: 'Galian pondasi tapak, basement, saluran drainase, & kolam',
     description: 'Layanan penggalian tanah secara manual atau mekanis menggunakan alat berat mini backhoe/excavator. Kami mengurus sekaligus pembuangan (disposal) tanah galian ke luar proyek tanpa mengotori jalan umum.',
-    image: '/src/assets/images/hero_dump_truck_worksite_1792120788969.jpg',
+    image: heroDumpTruckImg,
     recommendedFleet: 'Excavator PC50/PC75 + Dump Truck',
     features: [
       'Tenaga penggali manual berpengalaman & presisi',
@@ -129,7 +140,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Muatan Maksimal 1.2 Ton',
     idealFor: 'Akses gang sempit, renovasi toilet/kamar tidur, sampah interior perumahan padat.',
     dimensions: 'Panjang 2.3m × Lebar 1.5m × Tinggi Bak 0.4m',
-    image: '/src/assets/images/fleet_truck_showcase_1792120791139.jpg',
+    image: fleetTruckImg,
     ratePerRit: 'Mulai Rp 350.000 / rit'
   },
   {
@@ -139,7 +150,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Muatan Maksimal 3.5 Ton',
     idealFor: 'Renovasi rumah 1-2 lantai, tebangan pohon halaman, buang partisi ruko.',
     dimensions: 'Panjang 3.1m × Lebar 1.7m × Tinggi Bak 0.7m',
-    image: '/src/assets/images/fleet_truck_showcase_1792120791139.jpg',
+    image: fleetTruckImg,
     ratePerRit: 'Mulai Rp 650.000 / rit'
   },
   {
@@ -149,7 +160,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Muatan Maksimal 8-10 Ton',
     idealFor: 'Bongkaran gedung, pengurugan pondasi, disposal tanah proyek jalanan lebar.',
     dimensions: 'Panjang 4.2m × Lebar 2.0m × Tinggi Bak 1.0m (Hidrolik Tip)',
-    image: '/src/assets/images/hero_dump_truck_worksite_1792120788969.jpg',
+    image: heroDumpTruckImg,
     ratePerRit: 'Mulai Rp 1.100.000 / rit'
   },
   {
@@ -159,7 +170,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Daya Gali Cepat & Presisi',
     idealFor: 'Pembersihan lahan luas, babas semak akar, galian parit dan pondasi basement.',
     dimensions: 'Sistem Rantai Karet (Aman untuk aspal perumahan)',
-    image: '/src/assets/images/service_excavation_clearing_1792120790487.jpg',
+    image: excavationImg,
     ratePerRit: 'Mulai Rp 1.500.000 / shift'
   }
 ];
