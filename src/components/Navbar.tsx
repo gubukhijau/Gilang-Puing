@@ -12,7 +12,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenOrderModal }) => {
 
   const navLinks = [
     { label: 'Layanan', href: '#layanan' },
-    { label: 'Armada & Harga', href: '#armada' },
+    { label: 'Keunggulan', href: '#keunggulan' },
+    { label: 'Tentang Kami', href: '#tentang-kami' },
     { label: 'Proses Kerja', href: '#proses' },
     { label: 'Area Layanan', href: '#area' },
   ];

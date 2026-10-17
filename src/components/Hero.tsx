@@ -74,10 +74,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenOrderModal }) => {
               </a>
 
               <a
-                href="#armada"
+                href="#layanan"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-white bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 hover:border-neutral-600 rounded-lg transition-colors whitespace-nowrap shrink-0"
               >
-                <span>Lihat Armada &amp; Tarif</span>
+                <span>Lihat Semua Layanan</span>
               </a>
             </div>
 

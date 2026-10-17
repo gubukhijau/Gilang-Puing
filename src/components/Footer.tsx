@@ -90,10 +90,12 @@ export const Footer: React.FC = () => {
           <div>
             &copy; {new Date().getFullYear()} Gilang Buang Puing. Hak Cipta Dilindungi.
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <a href="#layanan" className="hover:text-neutral-300">Layanan</a>
             <span>·</span>
-            <a href="#armada" className="hover:text-neutral-300">Armada</a>
+            <a href="#keunggulan" className="hover:text-neutral-300">Keunggulan</a>
+            <span>·</span>
+            <a href="#tentang-kami" className="hover:text-neutral-300">Tentang Kami</a>
             <span>·</span>
             <a href="#proses" className="hover:text-neutral-300">Proses Kerja</a>
             <span>·</span>

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
-import { FleetSection } from './components/FleetSection';
+import { AdvantagesSection } from './components/AdvantagesSection';
+import { AboutUsSection } from './components/AboutUsSection';
 import { WorkflowSection } from './components/WorkflowSection';
 import { CoverageAreaSection } from './components/CoverageAreaSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
@@ -36,8 +37,11 @@ export default function App() {
         {/* 6 Specialized Services */}
         <ServicesSection />
 
-        {/* Fleet & Rates */}
-        <FleetSection />
+        {/* Keunggulan Layanan */}
+        <AdvantagesSection />
+
+        {/* Tentang Kami */}
+        <AboutUsSection />
 
         {/* 4-Step Working Flow & Guarantees */}
         <WorkflowSection />
