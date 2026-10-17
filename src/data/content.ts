@@ -14,9 +14,9 @@ export const ASSET_IMAGES = {
 export const COMPANY_INFO = {
   name: 'Gilang Buang Puing',
   tagline: 'Jasa Buang Puing & Pembersihan Lahan Terpercaya di Jabodetabek',
-  phone: '0812-8888-9999',
-  phoneClean: '6281288889999',
-  whatsappUrl: (msg: string) => `https://wa.me/6281288889999?text=${encodeURIComponent(msg)}`,
+  phone: '0819-1447-4820',
+  phoneClean: '6281914474820',
+  whatsappUrl: (msg: string) => `https://wa.me/6281914474820?text=${encodeURIComponent(msg)}`,
   address: 'Jl. Raya Cilandak KKO No. 45, Pasar Minggu, Jakarta Selatan (Melayani Seluruh Jabodetabek)',
   operatingHours: '06.00 - 22.00 WIB (Setiap Hari Termasuk Minggu & Hari Libur)',
   stats: [
@@ -41,9 +41,7 @@ export const SERVICES: ServiceItem[] = [
       'Pembuangan ke TPA & lokasi urug resmi',
       'Area kerja disapu bersih setelah muat selesai'
     ],
-    materialsHandled: ['Pecahan Tembok & Bata', 'Puing Cor & Beton', 'Keramik & Granit', 'Semen Kering & Pasir'],
-    startingPrice: 'Rp 350.000',
-    unit: 'rit'
+    materialsHandled: ['Pecahan Tembok & Bata', 'Puing Cor & Beton', 'Keramik & Granit', 'Semen Kering & Pasir']
   },
   {
     id: 'buang-sampah-proyek',
@@ -58,9 +56,7 @@ export const SERVICES: ServiceItem[] = [
       'Bisa dijadwalkan malam hari untuk mall / gedung kantor',
       'Tersedia sewa karung jumbo (jumbo bag)'
     ],
-    materialsHandled: ['Gypsum & Plafon Runtuh', 'Kusen Kayu & Triplek', 'Kaca & Partisi Aluminium', 'Kardus & Plastik Material'],
-    startingPrice: 'Rp 300.000',
-    unit: 'rit'
+    materialsHandled: ['Gypsum & Plafon Runtuh', 'Kusen Kayu & Triplek', 'Kaca & Partisi Aluminium', 'Kardus & Plastik Material']
   },
   {
     id: 'buang-tebangan-pohon',
@@ -75,9 +71,7 @@ export const SERVICES: ServiceItem[] = [
       'Disposal ke fasilitas pengolahan biomassa/taman',
       'Tidak meninggalkan daun berserakan'
     ],
-    materialsHandled: ['Batang Gelondongan Kayu', 'Ranting & Dahan Pohon', 'Sampah Rumput & Bambu', 'Akar & Tunggul Tanaman'],
-    startingPrice: 'Rp 400.000',
-    unit: 'rit'
+    materialsHandled: ['Batang Gelondongan Kayu', 'Ranting & Dahan Pohon', 'Sampah Rumput & Bambu', 'Akar & Tunggul Tanaman']
   },
   {
     id: 'pengurugan-puing-tanah',
@@ -92,9 +86,7 @@ export const SERVICES: ServiceItem[] = [
       'Armada ready supply harian puluhan rit',
       'Tersedia opsi pemadatan dengan stamper / vibro'
     ],
-    materialsHandled: ['Puing Cor Kasar & Halus', 'Tanah Merah Super', 'Batu Split & Makadam', 'Sirtu Peninggi Lantai'],
-    startingPrice: 'Rp 500.000',
-    unit: 'rit'
+    materialsHandled: ['Puing Cor Kasar & Halus', 'Tanah Merah Super', 'Batu Split & Makadam', 'Sirtu Peninggi Lantai']
   },
   {
     id: 'pembersihan-lahan-kosong',
@@ -109,9 +101,7 @@ export const SERVICES: ServiceItem[] = [
       'Perataan permukaan tanah kasar (rough grading)',
       'Dokumentasi progress foto & video sebelum-sesudah'
     ],
-    materialsHandled: ['Lahan Kavling Perumahan', 'Tanah Proyek Komersial', 'Area Pinggir Jalan / Gudang', 'Pekarangan Rumah Kosong'],
-    startingPrice: 'Rp 15.000',
-    unit: 'm²'
+    materialsHandled: ['Lahan Kavling Perumahan', 'Tanah Proyek Komersial', 'Area Pinggir Jalan / Gudang', 'Pekarangan Rumah Kosong']
   },
   {
     id: 'galian-tanah',
@@ -126,9 +116,7 @@ export const SERVICES: ServiceItem[] = [
       'Pembuangan tanah sisa galian (soil disposal)',
       'Monitoring kedalaman dan elevasi galian sesuai gambar'
     ],
-    materialsHandled: ['Galian Pondasi & Sloof', 'Galian Septic Tank & Kolam', 'Galian Parit & Drainase', 'Galian Basement & Turap'],
-    startingPrice: 'Rp 95.000',
-    unit: 'm³'
+    materialsHandled: ['Galian Pondasi & Sloof', 'Galian Septic Tank & Kolam', 'Galian Parit & Drainase', 'Galian Basement & Turap']
   }
 ];
 
@@ -140,8 +128,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Muatan Maksimal 1.2 Ton',
     idealFor: 'Akses gang sempit, renovasi toilet/kamar tidur, sampah interior perumahan padat.',
     dimensions: 'Panjang 2.3m × Lebar 1.5m × Tinggi Bak 0.4m',
-    image: fleetTruckImg,
-    ratePerRit: 'Mulai Rp 350.000 / rit'
+    image: fleetTruckImg
   },
   {
     id: 'engkel',
@@ -150,8 +137,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Muatan Maksimal 3.5 Ton',
     idealFor: 'Renovasi rumah 1-2 lantai, tebangan pohon halaman, buang partisi ruko.',
     dimensions: 'Panjang 3.1m × Lebar 1.7m × Tinggi Bak 0.7m',
-    image: fleetTruckImg,
-    ratePerRit: 'Mulai Rp 650.000 / rit'
+    image: fleetTruckImg
   },
   {
     id: 'dump-double',
@@ -160,8 +146,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Muatan Maksimal 8-10 Ton',
     idealFor: 'Bongkaran gedung, pengurugan pondasi, disposal tanah proyek jalanan lebar.',
     dimensions: 'Panjang 4.2m × Lebar 2.0m × Tinggi Bak 1.0m (Hidrolik Tip)',
-    image: heroDumpTruckImg,
-    ratePerRit: 'Mulai Rp 1.100.000 / rit'
+    image: heroDumpTruckImg
   },
   {
     id: 'excavator',
@@ -170,8 +155,7 @@ export const FLEET_OPTIONS: FleetItem[] = [
     volume: 'Daya Gali Cepat & Presisi',
     idealFor: 'Pembersihan lahan luas, babas semak akar, galian parit dan pondasi basement.',
     dimensions: 'Sistem Rantai Karet (Aman untuk aspal perumahan)',
-    image: excavationImg,
-    ratePerRit: 'Mulai Rp 1.500.000 / shift'
+    image: excavationImg
   }
 ];
 
@@ -257,7 +241,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
 export const FAQS: FaqItem[] = [
   {
     question: 'Berapa biaya jasa buang puing per rit di Gilang Buang Puing?',
-    answer: 'Tarif buang puing mulai dari Rp 350.000 untuk armada Pick-up, Rp 650.000 untuk Truk Engkel 4 roda, dan Rp 1.100.000 untuk Dump Truck Double 6 roda. Harga sudah mencakup sewa armada, bensin driver, dan retribusi pembuangan resmi. Jika membutuhkan tenaga kuli angkut (muat), kami sediakan dengan tarif tambahan yang sangat terjangkau.'
+    answer: 'Biaya jasa buang puing dihitung secara transparan dan fleksibel berdasarkan volume muatan (jumlah ritase), jenis armada yang digunakan, akses lokasi proyek, serta kebutuhan tenaga kuli muat. Biaya yang disepakati bersama bersifat all-in tanpa ada pungutan liar atau biaya siluman saat armada tiba. Anda dapat mengirimkan foto kondisi puing dan alamat lokasi via WhatsApp untuk mendapatkan estimasi dan penawaran terbaik.'
   },
   {
     question: 'Apakah sampah puing harus sudah dimasukkan ke dalam karung?',

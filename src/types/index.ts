@@ -7,8 +7,8 @@ export interface ServiceItem {
   recommendedFleet: string;
   features: string[];
   materialsHandled: string[];
-  startingPrice: string;
-  unit: string;
+  startingPrice?: string;
+  unit?: string;
 }
 
 export interface FleetItem {
@@ -19,7 +19,7 @@ export interface FleetItem {
   idealFor: string;
   dimensions: string;
   image: string;
-  ratePerRit: string;
+  ratePerRit?: string;
 }
 
 export interface TestimonialItem {

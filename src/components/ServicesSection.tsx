@@ -82,9 +82,9 @@ export const ServicesSection: React.FC = () => {
                     {serviceNumber}
                   </div>
 
-                  {/* Starting rate */}
-                  <div className="absolute bottom-3 right-3 bg-amber-400 text-neutral-950 text-xs font-bold px-2.5 py-1 rounded-md shadow-xs">
-                    Mulai {service.startingPrice}/{service.unit}
+                  {/* Service status badge */}
+                  <div className="absolute bottom-3 right-3 bg-neutral-900/80 backdrop-blur-xs text-amber-400 text-xs font-semibold px-2.5 py-1 rounded-md shadow-xs">
+                    Siap Muat
                   </div>
                 </div>
 
@@ -181,8 +181,8 @@ export const ServicesSection: React.FC = () => {
                 <span className="text-xs font-semibold text-amber-600 uppercase tracking-wide">
                   Rincian Layanan
                 </span>
-                <span className="text-xs font-bold text-neutral-800 bg-amber-100 px-2.5 py-0.5 rounded">
-                  Mulai {activeModalService.startingPrice}/{activeModalService.unit}
+                <span className="text-xs font-semibold text-emerald-850 bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded">
+                  Konsultasi &amp; Nego Langsung
                 </span>
               </div>
 
