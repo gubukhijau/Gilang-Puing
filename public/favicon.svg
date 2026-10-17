@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Rounded Base Badge -->
+  <rect width="64" height="64" rx="14" fill="#0f0f10"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-opacity="0.8"/>
+
+  <!-- Puing / Rubble Stones in Dump Bed -->
+  <path d="M19 24 L24 18 L29 22 L35 17 L39 24 Z" fill="#fcd34d" />
+  <circle cx="25" cy="20" r="2.5" fill="#f59e0b"/>
+  <circle cx="32" cy="19" r="2.2" fill="#d97706"/>
+
+  <!-- Dump Bed (Tilted/Industrial) -->
+  <path d="M14 25 L40 25 L36 38 L16 38 Z" fill="#f59e0b" />
+  <path d="M17 27 L37 27 L34 36 L19 36 Z" fill="#fbbf24" opacity="0.25"/>
+
+  <!-- Truck Cabin -->
+  <path d="M41 27 L48 27 L53 33 L53 38 L41 38 Z" fill="#f59e0b" />
+  <!-- Cabin Window -->
+  <path d="M43 29 L47 29 L50 33 L43 33 Z" fill="#0f0f10" />
+
+  <!-- Chassis / Frame -->
+  <rect x="14" y="38" width="39" height="4" rx="1" fill="#737373" />
+
+  <!-- Wheels -->
+  <!-- Left Wheel -->
+  <circle cx="22" cy="44" r="6" fill="#262626" stroke="#f59e0b" stroke-width="1.5" />
+  <circle cx="22" cy="44" r="2" fill="#f59e0b" />
+
+  <!-- Right Wheel -->
+  <circle cx="45" cy="44" r="6" fill="#262626" stroke="#f59e0b" stroke-width="1.5" />
+  <circle cx="45" cy="44" r="2" fill="#f59e0b" />
+
+  <!-- Road / Ground Base Line -->
+  <line x1="8" y1="52" x2="56" y2="52" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 3"/>
+</svg>
