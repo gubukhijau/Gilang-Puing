@@ -99,7 +99,7 @@ export const Footer: React.FC = () => {
             <span>·</span>
             <a href="#proses" className="hover:text-neutral-300">Proses Kerja</a>
             <span>·</span>
-            <a href="#area" className="hover:text-neutral-300">Wilayah Jabodetabek</a>
+            <a href="#kontak" className="hover:text-neutral-300">Kontak &amp; Order</a>
           </div>
         </div>
       </div>

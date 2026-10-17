@@ -8,6 +8,7 @@ import { WorkflowSection } from './components/WorkflowSection';
 import { CoverageAreaSection } from './components/CoverageAreaSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FaqSection } from './components/FaqSection';
+import { CallToActionSection } from './components/CallToActionSection';
 import { Footer } from './components/Footer';
 import { QuickOrderModal } from './components/QuickOrderModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -54,6 +55,9 @@ export default function App() {
 
         {/* Frequently Asked Questions */}
         <FaqSection />
+
+        {/* Call to Action Section */}
+        <CallToActionSection onOpenOrderModal={() => handleOpenOrderModal()} />
       </main>
 
       {/* Footer */}
